@@ -11,6 +11,10 @@ const bot = new Aoijs.Bot({
   autoUpdate: ["false"]//Change PREFIX to your Prefix
 })
 
+bot.status({
+text: "Coding A Bot",
+type: "WATCHING"})
+
 bot.onMessageUpdate() 
 bot.onMessage(); // Allows Commands to Executed
 bot.loadCommands(`./commands/`);
